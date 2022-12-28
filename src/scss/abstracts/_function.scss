@@ -1,0 +1,52 @@
+// * theme
+@function theme-color($key: "second-main") {
+  @return map-get($themes, $key);
+}
+
+// * color
+@function color($key: "main-color") {
+  @return map-get($colors, $key);
+}
+
+// * Breakpoints
+@function breakpoint($key: "md") {
+  @return map-get($breakpoints, $key);
+}
+
+@function text-color($key: "main-color") {
+  @return map-get($text-color, $key);
+}
+
+/// Native `url(...)` function wrapper
+/// @param {String} $base -- base url for the asset
+/// @param {String} $type -- asset type folder e.g fonts/ or images/
+/// @param {String} $path -- asset path
+/// @return {Url}
+/// @require $base-url
+@function asset($type, $path) {
+  @return url($type + $path);
+}
+
+/// Return url to an image based on it path
+/// @param {String} $path - image path
+/// @return {Url}
+/// @require $path
+@function image($path) {
+  @return asset('../../../public/images', $path);
+}
+
+/// Return url to an font based on it path
+/// @param {String} $path - image path
+/// @return {Url}
+/// @require $path
+@function font($path) {
+  @return asset('../../../public/fonts/', $path);
+}
+
+/// Return url to an icon based on it path
+/// @param {String} $path - image path
+/// @return {Url}
+/// @require $path
+@function icon($path) {
+  @return asset('../../../public/icons', $path);
+}

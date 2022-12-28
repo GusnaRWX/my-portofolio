@@ -1,0 +1,28 @@
+// mixins media query
+
+$md: breakpoint('md');
+$lg: breakpoint('lg');
+$xl: breakpoint('xl');
+
+
+// to change media screen prev change min-device-width to min-width and change screen with only screen
+
+// Mixin For Media Screen min width md and max width lg
+@mixin medium {
+  @media screen and (min-width: $md) and (max-width: $lg) {
+    @content;
+  }
+}
+
+// Mixin For Media Screen min width lg and max width xl
+@mixin large {
+  @media screen and (min-width: $lg) and (max-width: $xl) {
+    @content;
+  }
+}
+
+@mixin extraLarge {
+  @media screen and (min-width: $xl) {
+    @content;
+  }
+}

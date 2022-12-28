@@ -1,0 +1,48 @@
+$text-color: (
+  'primary-black': #444444,
+  'primary-white': #E4E4E4,
+  'grey-100': #545454,
+  'grey-90': #626262,
+  'grey-80': #939393,
+  'grey-70': #F3F3F3,
+  'error': #DF1642,
+  'warning': #FFBB38,
+  'success': #18A957,
+);
+
+/// black : #444444
+/// blue-sky: 61D2DC
+/// blue-light: 41B3D3
+/// white: E4E4E4
+
+$colors: (
+  'primary': #444444,
+  'white': #fff,
+  'background': #E4E4E4,
+  'blue-sky': #61D2DC,
+  'blue-light': #41B3D3,
+  'grey-100': #545454,
+  'grey-90': #626262,
+  'grey-80': #939393,
+  'grey-70': #F3F3F3,
+  'error': #DF1642,
+  'warning': #FFBB38,
+  'success': #18A957,
+  'black': #000
+);
+
+$breakpoints: (
+  'xs': 0px,
+  'sm': 600px,
+  'md': 900px,
+  'lg': 1200px,
+  'xl': 1536px
+);
+
+$font-normal: 'Encode Sans Light';
+$font-regular: 'Encode Sans Regular';
+$font-bold: 'Encode Sans Bold';
+
+
+
+$border-radius: 6px;

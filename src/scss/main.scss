@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// for abstract
+@import 'abstracts/variables',
+'abstracts/function',
+'abstracts/mixins',
+'abstracts/placeholders';
+
+// for base
+@import 'base/base',
+'base/fonts',
+'base/helpers',
+'base/typography';
+
+@import 'core/nav';
+
+@import 'components/parallax';

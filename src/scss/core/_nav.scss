@@ -1,0 +1,175 @@
+.nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: color('primary');
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 1.8rem;
+  color: #FFFFFF;
+  margin-top: 3rem;
+}
+
+.button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white !important;
+  background: transparent;
+}
+
+.menu-nav {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-nav::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: color('white');
+  transition: width .2s;
+}
+
+.menu-nav:hover::after {
+  width: 100%;
+}
+
+@include medium {
+  .nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+  }
+
+  .nav-wrapper {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: color('primary');
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 1.8rem;
+    color: #FFFFFF;
+    margin-top: 0;
+  }
+}
+
+@include large {
+  .nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+  }
+
+  .nav-wrapper {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: color('primary');
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 1.8rem;
+    color: #FFFFFF;
+    margin-top: 0;
+  }
+}
+
+@include extraLarge {
+  .nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+  }
+
+  .nav-wrapper {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: color('primary');
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 1.8rem;
+    color: #FFFFFF;
+    margin-top: 0;
+  }
+}
